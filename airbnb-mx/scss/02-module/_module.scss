@@ -1,0 +1,13 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//***************************
+//* UTILITIES
+//***************************
+.wrapper { 
+    margin-inline: 2.5rem; 
+    @include thm.mx-query($device: 'tablet', $size: 'sm') {
+        position: relative;
+        margin-inline: 6.5%;
+    }
+}

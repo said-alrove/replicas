@@ -1,0 +1,30 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//***************************
+//* .HERO-CONTAINER
+//***************************
+.hero-container { 
+    picture { 
+        display: none;
+        @include thm.mx-query($device: 'tablet', $size: 'sm') {
+            display: initial;
+        }
+    }
+
+    img {
+        border-radius: 1rem;
+        inline-size: 75%;
+        block-size: 67rem;
+        object-fit: cover;
+        @include thm.mx-query($device: 'tablet', $size: 'sm') {
+            position: absolute;
+            inset: 
+            {
+                block-start: 6.4rem;
+                inline-end: 0;
+            }
+            z-index: -1;
+        }
+    }
+}

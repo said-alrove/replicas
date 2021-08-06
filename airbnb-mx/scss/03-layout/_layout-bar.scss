@@ -1,0 +1,10 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//***************************
+//* .BAR-CONTAINER
+//***************************
+.bar-container {
+    @include thm.mx-flexbox($jt-content: space-between, $al-items: center);
+    block-size: 6.4rem;
+}

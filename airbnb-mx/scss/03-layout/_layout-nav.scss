@@ -1,0 +1,30 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//***************************
+//* .NAV-CONTAINER
+//***************************
+.nav-container { 
+    flex-basis: 22.5rem; 
+    @include thm.mx-query($device: 'tablet', $size: 'sm') {
+        flex-basis: 45rem;
+    }
+
+    @at-root {
+        .nav__list {
+            @include thm.mx-flexbox($jt-content: space-between, $al-items: center);
+            block-size: 6.4rem;
+        }
+
+        .nav__item { text-align: center; }
+
+        .nav__item:nth-child(1) {
+            display: none;
+            @include thm.mx-query($device: 'tablet', $size: 'sm') {
+                display: initial;
+            }
+        }
+
+        .nav__item > a { line-height: 1.5; }
+    }
+}

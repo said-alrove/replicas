@@ -1,0 +1,55 @@
+@use '../theme' as thm;
+@use 'sass:map';
+
+//***************************
+//* GLOBAL TAGS
+//***************************
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body { 
+    min: 
+    {
+        inline-size: 46rem;
+        block-size: 120vh;
+    }
+    font: 
+    {
+        family: map.get(thm.$ff, 'main');
+        size: 16px; 
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+*, 
+*::before, 
+*::after { box-sizing: inherit; }
+
+ul { 
+    padding: 0;
+    list-style: none; 
+}
+
+input, 
+select { background-color: transparent; }
+
+//***************************
+//* TYPOGRAHPY
+//***************************
+a { 
+    font: 
+    {
+        size: 1.4rem;
+        weight: 600;
+    }
+    text-decoration: none; 
+    color: map.get(thm.$clr, 'gray-400');
+}

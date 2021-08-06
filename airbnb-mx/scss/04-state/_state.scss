@@ -1,0 +1,11 @@
+@use '../theme' as thm;
+@use 'sass:map';
+          
+//***************************
+//* .RESERVATIONS-FORM
+//***************************
+.reservations-form form {
+    @at-root {
+        .form__input:active { box-shadow: 0 0 0 .2rem inset map.get(thm.$clr, 'gray-400'); }
+    }
+}
