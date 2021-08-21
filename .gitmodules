@@ -1,0 +1,6 @@
+[submodule "airbnb-mx"]
+	path = airbnb-mx
+	url = https://github.com/said-alrove/airbnb-mx.git
+[submodule "fonts-apple-developer"]
+	path = fonts-apple-developer
+	url = https://github.com/said-alrove/fonts-apple-developer.git
